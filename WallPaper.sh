@@ -13,6 +13,7 @@ Options:
   -r --random                    Randomly get a wallpaper from www.bing.com.
   -n                             Get a wallpaper n days ago.
                                  (e.g. "./Wallpaper.sh -5" where n = 5)
+  -c --clean                     Clean all pictures.
   -h --help                      Show this help.
 EOF
 }
@@ -23,6 +24,11 @@ else
 	case $1 in
         -r|--random)
             PICTURE_URL="http://bing.ioliu.cn/v1/rand?w=1980&h=1200"
+            ;;
+        -c|--clean)
+            rm $PICTURE_DIR/*
+            echo "All cleaned up."
+			exit 1
             ;;
         -h|--help)
             help

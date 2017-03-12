@@ -15,6 +15,7 @@
 ```shell
 ./WallPaper.sh -r 更换随机壁纸(或 --random)
 ./WallPaper.sh -n 选择壁纸编号(如 -5)
+./WallPaper.sh -c 清理缓存(或 --clean)
 ./WallPaper.sh -h 更多帮助内容(或 --help)
 ```
 
