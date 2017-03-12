@@ -28,11 +28,11 @@ else
         -c|--clean)
             rm $PICTURE_DIR/*
             echo "All cleaned up."
-			exit 1
+            exit 1
             ;;
         -h|--help)
             help
-			exit 1
+            exit 1
             ;;
         *)
 			if [[ ${1:1:1} =~ ^-?[0-9]+$ ]]; then
